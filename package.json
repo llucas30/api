@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "API developed in the explorer program of Rocketseat.",
+  "description": "Learning how to create an api",
   "main": "index.js",
   "scripts": {
     "start": "node ./src/server.js",
