@@ -1,4 +1,4 @@
-require("express-async-erros");
+require("express-async-errors");
 
 const AppError = require("./utils/AppError");
 
