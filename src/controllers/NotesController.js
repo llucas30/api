@@ -60,7 +60,8 @@ class NotesController {
     const { title, user_id } = request.query;
 
     const notes = await knex("notes")
-    .where({ user_id, title })
+    .where({ user_id })
+    .whereLike("title", `%${title}%`) //whereLike busca por valores contidas no parametro referenciado
     .orderBy("title");
 
     return response.json(notes);
